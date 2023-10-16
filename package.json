@@ -1,11 +1,13 @@
 {
   "name": "doc-ai",
   "displayName": "Doc Ai",
-  "description": "",
+  "description": "Extension powered by GPT-based AI, automatically generate code documentation",
   "version": "0.0.1",
+  "publisher": "Ozzitech",
   "engines": {
     "vscode": "^1.83.0"
   },
+  "icon": "./logo1.png",
   "categories": [
     "Other"
   ],

@@ -1,13 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deactivate = exports.activate = void 0;
+/* eslint-disable @typescript-eslint/naming-convention */
 const vscode = require("vscode");
 const axios_1 = require("axios");
 const handleOpenAPICall = async (inputValue) => {
     // Api Url
     const apiUrl = "https://api.openai.com/v1/chat/completions";
     // Api Key
-    const apiKey = "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";
+    const apiKey = "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";
     const headers = {
         "Content-Type": "application/json",
         Authorization: `Bearer ${apiKey}`,
@@ -18,7 +19,7 @@ const handleOpenAPICall = async (inputValue) => {
         messages: [
             {
                 role: "system",
-                content: "You will be provided with a piece of code, and your task is to document it clearly.",
+                content: "You will be provided with a piece of code, and your task is to make it more human-readable with comments and also write a document for it at the bottom of the file.",
             },
             {
                 role: "user",
